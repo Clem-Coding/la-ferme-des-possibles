@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Gowun+Dodum&family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Gowun+Dodum&family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>La ferme des possibles</title>
+    <link rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="assets/images/logo-ferme.png" alt="logo" />
+
+      <h1 class="header__title">La ferme des possibles</h1>
+
+      <nav id="burgerNav" class="header__nav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="cafe.html">Café</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="activites.html">Activités</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="lemur.html">Mur</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="form.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+    </header>
+
+    <div class="container">
+      <!-- Partie Formulaire -->
+      <div class="form-section">
+        <h2 class="contact-h2">Inscription à l'atelier</h2>
+        <form>
+          <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Entrez votre nom"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input
+              type="text"
+              id="prenom"
+              name="prenom"
+              placeholder="Entrez votre prénom"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Entrez votre email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="telephone">Téléphone :</label>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="Entrez votre téléphone"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="atelier">Type d'atelier :</label>
+            <select id="atelier" name="atelier" required>
+              <option value="">-- Sélectionnez un atelier --</option>
+              <option value="couture">Atelier Couture</option>
+              <option value="patisserie">Atelier Pâtisserie</option>
+              <option value="maraichage">Atelier Maraîchage</option>
+              <option value="cuisine">Atelier Cuisine</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit">S'inscrire</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Partie Contact -->
+      <section class="contact-section">
+        <h2 class="contact-h2">Nous Contacter</h2>
+        <div class="contact-item"><span>Email :</span> contact@example.com</div>
+        <div class="contact-item">
+          <span>Téléphone :</span> +33 6 00 00 00 00
+        </div>
+        <div class="contact-item">
+          <span>Adresse :</span> 123 Rue de la République, 75000 Paris, France
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__opening-hours">
+          <h4>Horaires d'ouverture</h4>
+          <ul>
+            <li>Lundi: 10h - 18h</li>
+            <li>Mardi: 10h - 18h</li>
+            <li>Mercredi: 10h - 18h</li>
+            <li>Jeudi: 10h - 18h</li>
+            <li>Vendredi: 10h - 18h</li>
+            <li>Samedi: 10h - 18h</li>
+            <li>Dimanche: 10h - 18h</li>
+          </ul>
+        </div>
+        <div class="footer-content__adress">
+          <h4>Adresse</h4>
+          <p>Gaec Cottin</p>
+          <p>22 La Bouderie, 35440 Dingé</p>
+        </div>
+        <div class="footer-content__social">
+          <h4>Réseaux sociaux</h4>
+          <ul>
+            <li>
+              <i class="fa-brands fa-square-facebook fa-xl"></i
+              ><a href="https://www.facebook.com/"></a>
+            </li>
+            <li>
+              <i class="fa-brands fa-square-twitter fa-xl"></i
+              ><a href="https://x.com/?lang=en"></a>
+            </li>
+            <li>
+              <i class="fa-brands fa-square-instagram fa-xl"></i
+              ><a href="https://www.instagram.com/"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script language="javascript" src="assets/js/index.js"></script>
+  </body>
+</html>
