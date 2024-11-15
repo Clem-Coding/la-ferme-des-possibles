@@ -4,7 +4,6 @@
 
 const form = document.querySelector(".announcement-form");
 const wall = document.querySelector(".announcements-wall");
-const clearButton = document.querySelector(".clear-button");
 
 /**************************************************************/
 /*                      FUNCTIONS                            */
@@ -38,11 +37,6 @@ function saveAnnouncement(data) {
 function loadAnnouncements() {
   const announcements = JSON.parse(localStorage.getItem("announcements")) || [];
   announcements.forEach(createAnnouncementElement);
-}
-
-function clearAllAnnouncements() {
-  wall.innerHTML = "";
-  localStorage.removeItem("announcements");
 }
 
 function rotatePostit(postit) {
@@ -85,12 +79,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   loadAnnouncements();
 
-  // load les postits par défaur au démarrage pourn la démo
   addDefaultPostits();
 
   form.addEventListener("submit", announcementSubmit);
-
-  clearButton.addEventListener("click", clearAllAnnouncements);
-
-  // rotatePostit();
 });
