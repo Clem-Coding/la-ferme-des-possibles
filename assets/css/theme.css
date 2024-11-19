@@ -63,12 +63,11 @@ h3,
 h4 {
   font-family: Pacifico, cursive;
   font-weight: lighter;
-  margin: 0;
 }
 
 h2 {
   font-family: Playfair Display, serif;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 h3 {
@@ -79,7 +78,6 @@ button {
   padding: 0.5em 1em;
   border-radius: 0.3em;
   transition: all 0.3s ease;
-  width: auto;
 }
 
 button:hover {
@@ -119,8 +117,6 @@ button:hover {
 .header__title {
   display: flex;
   flex-direction: row;
-  font-size: 3.5rem;
-  text-align: center;
 }
 .header__nav {
   height: 30rem;
@@ -130,13 +126,13 @@ button:hover {
   top: 0;
   right: -20em;
   background-color: #f2efe3;
-  padding-top: 6rem;
+  padding-top: 5rem;
   transition: right 0.3s ease;
 }
 .header__nav a {
   padding: 0.5rem 0.5rem 0.5rem 2.4rem;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   color: #251e27;
   display: block;
   transition: 0.2s;
@@ -159,6 +155,10 @@ button:hover {
   font-size: 3rem;
 }
 
+.header__menu-burger a#openBtn {
+  display: inline-block;
+}
+
 .burger-icon span {
   display: flex;
   flex-direction: row;
@@ -175,9 +175,6 @@ button:hover {
   gap: 3em;
 }
 
-.main {
-  margin: auto;
-}
 .main-banner__title {
   text-align: center;
   font-size: 3rem;
@@ -189,7 +186,6 @@ button:hover {
 }
 .main-section__title {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: 1em;
 }
 .main-section-gallery {
@@ -308,7 +304,8 @@ h4 {
 }
 */
 .activities-section__image {
-  margin: 0 15em;
+  margin: 0 10em;
+  margin-top: 1em;
   transition: 0.3s ease-in-out;
   display: block;
   position: relative;
