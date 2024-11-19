@@ -51,17 +51,17 @@ function addDefaultPostits() {
     {
       title: "Fruits à donner",
       description:
-        "Mes pommiers ont bien donné cette année. J'ai beaucoup de surplus. Passez me voir, je suis dans le secteur de Bedée. Mon numéro : 06.32.15.14.45 — Sabine",
+        "Mes pommiers ont bien donné cette année. J'ai beaucoup de surplus. Passez me voir, je suis dans le secteur de Tinténiac. Mon numéro : 06.32.15.14.45 — Sabine",
     },
     {
       title: "Besoin d'un coup de main pour déménager",
       description:
-        "Je déménage samedi prochain et j’aurais besoin de bras pour m’aider à porter quelques meubles. Pizza offerte ! Je suis à Pleumeleuc, contactez-moi au 07.21.65.43.22. Merci ! — Antoine",
+        "Je déménage samedi prochain et j’aurais besoin de bras pour m’aider à porter quelques meubles. Pizza offerte ! Je suis à Guipel, contactez-moi au 07.21.65.43.22. Merci ! — Antoine",
     },
     {
       title: "Service de jardinage gratuit",
       description:
-        "Passionné de jardinage, je propose un coup de main gratuit pour les personnes ayant du mal à entretenir leur potager ou jardin. Que ce soit pour un désherbage, un coup de bêche, ou un conseil, je suis là ! Secteur : Montfort-sur-Meu. Contactez-moi au 06.45.23.87.10 — Jacques",
+        "Passionné de jardinage, je propose un coup de main gratuit pour les personnes ayant du mal à entretenir leur potager ou jardin. Que ce soit pour un désherbage, un coup de bêche, ou un conseil, je suis là ! Secteur : Québriac. Contactez-moi au 06.45.23.87.10 — Jacques",
     },
   ];
 

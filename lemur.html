@@ -24,9 +24,15 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="assets/images/logo-ferme.png" alt="logo" />
+      <div class="header__wrapper">
+        <img
+          class="header__logo"
+          src="assets/images/logo-ferme.png"
+          alt="logo"
+        />
 
-      <h1 class="header__title">La ferme des possibles</h1>
+        <h1 class="header__title">La ferme des possibles</h1>
+      </div>
 
       <nav id="burgerNav" class="header__nav">
         <a id="closeBtn" href="#" class="close">×</a>
@@ -49,7 +55,7 @@
         </ul>
       </nav>
 
-      <a href="#" id="openBtn">
+      <a href="#" id="openBtn" class="menu-burger">
         <span class="burger-icon">
           <span></span>
           <span></span>
@@ -59,81 +65,85 @@
     </header>
 
     <main class="main">
-      <div class="main-banner">
-        <h2 class="main-banner__title">Le mur des petites annonces!</h2>
-        <p class="main-banner__text">
-          Ici, vous pouvez publier vos annonces de troc, proposer un coup de
-          main à donner, ou échanger des services.
-        </p>
-        <p class="main-banner__text">
-          Que vous ayez une compétence à partager ou que vous cherchiez de
-          l’aide, cet espace est là pour faciliter les échanges et renforcer le
-          lien social sur notre territoire
-        </p>
+      <div class="container">
+        <div class="main-banner">
+          <h2 class="main-banner__title">Le mur des petites annonces!</h2>
+          <p class="main-banner__text">
+            Ici, vous pouvez publier vos annonces de troc, proposer un coup de
+            main à donner, ou échanger des services.
+          </p>
+          <p class="main-banner__text">
+            Que vous ayez une compétence à partager ou que vous cherchiez de
+            l’aide, cet espace est là pour faciliter les échanges et renforcer
+            le lien social sur notre territoire
+          </p>
+        </div>
+
+        <section class="main-section__announcements-submit">
+          <form class="announcement-form">
+            <label for="title">Titre de l'annonce</label>
+            <input
+              type="text"
+              id="title"
+              placeholder="Titre de l'annonce"
+              required
+            />
+
+            <label for="description">Description de l'annonce</label>
+            <textarea
+              class="annoucement-form__textaera"
+              id="description"
+              placeholder="Description de l'annonce"
+              required
+            ></textarea>
+
+            <button class="annoucement-form__button" type="submit">
+              Publier
+            </button>
+          </form>
+        </section>
+
+        <section class="announcements-wall"></section>
       </div>
-
-      <section class="main-section__announcements-submit">
-        <form class="announcement-form">
-          <label for="title">Titre de l'annonce</label>
-          <input
-            type="text"
-            id="title"
-            placeholder="Titre de l'annonce"
-            required
-          />
-
-          <label for="description">Description de l'annonce</label>
-          <textarea
-            class="annoucement-form__textaera"
-            id="description"
-            placeholder="Description de l'annonce"
-            required
-          ></textarea>
-
-          <button class="annoucement-form__button" type="submit">
-            Publier
-          </button>
-        </form>
-      </section>
-
-      <section class="announcements-wall"></section>
     </main>
 
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-content__opening-hours">
-          <h4>Horaires d'ouverture</h4>
-          <ul>
-            <li>Lundi: 10h - 18h</li>
-            <li>Mardi: 10h - 18h</li>
-            <li>Mercredi: 10h - 18h</li>
-            <li>Jeudi: 10h - 18h</li>
-            <li>Vendredi: 10h - 18h</li>
-            <li>Samedi: 10h - 18h</li>
-            <li>Dimanche: 10h - 18h</li>
-          </ul>
-        </div>
-        <div class="footer-content__adress">
-          <h4>Adresse</h4>
-          <p>Gaec Cottin</p>
-          <p>22 La Bouderie, 35440 Dingé</p>
-        </div>
-        <div class="footer-content__social">
-          <h4>Réseaux sociaux</h4>
-          <ul>
-            <li>
-              <i class="fa-brands fa-square-facebook fa-xl"></i
-              ><a href="https://www.facebook.com/"></a>
-            </li>
-            <li>
-              <i class="fa-brands fa-square-twitter fa-xl"></i
-              ><a href="https://x.com/?lang=en"></a>
-            </li>
-            <li>
-              <i class="fa-brands fa-square-instagram fa-xl"></i
-              ><a href="https://www.instagram.com/"></a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-content__opening-hours">
+            <h4>Horaires d'ouverture</h4>
+            <ul>
+              <li>Lundi: 10h - 18h</li>
+              <li>Mardi: 10h - 18h</li>
+              <li>Mercredi: 10h - 18h</li>
+              <li>Jeudi: 10h - 18h</li>
+              <li>Vendredi: 10h - 18h</li>
+              <li>Samedi: 10h - 18h</li>
+              <li>Dimanche: 10h - 18h</li>
+            </ul>
+          </div>
+          <div class="footer-content__adress">
+            <h4>Adresse</h4>
+            <p>Gaec Cottin</p>
+            <p>22 La Bouderie, 35440 Dingé</p>
+          </div>
+          <div class="footer-content__social">
+            <h4>Réseaux sociaux</h4>
+            <ul>
+              <li>
+                <i class="fa-brands fa-square-facebook fa-xl"></i
+                ><a href="https://www.facebook.com/"></a>
+              </li>
+              <li>
+                <i class="fa-brands fa-square-twitter fa-xl"></i
+                ><a href="https://x.com/?lang=en"></a>
+              </li>
+              <li>
+                <i class="fa-brands fa-square-instagram fa-xl"></i
+                ><a href="https://www.instagram.com/"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

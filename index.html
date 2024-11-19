@@ -24,208 +24,229 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="assets/images/logo-ferme.png" alt="logo" />
+      <div class="header__wrapper">
+        <img
+          class="header__logo"
+          src="assets/images/logo-ferme.png"
+          alt="logo"
+        />
 
-      <h1 class="header__title">La ferme des possibles</h1>
+        <h1 class="header__title">La ferme des possibles</h1>
+      </div>
+      <div class="header__menu-burger">
+        <nav id="burgerNav" class="header__nav">
+          <a id="closeBtn" href="#" class="close">×</a>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="cafe.html">Café</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="activites.html">Activités</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="lemur.html">Mur</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="form.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-      <nav id="burgerNav" class="header__nav">
-        <a id="closeBtn" href="#" class="close">×</a>
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="index.html">Accueil</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="cafe.html">Café</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="activites.html">Activités</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="lemur.html">Mur</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="form.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="#" id="openBtn">
-        <span class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </a>
+        <a href="#" id="openBtn">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+      </div>
     </header>
 
     <main class="main">
-      <div class="main-banner">
-        <h2 class="main-banner__title">Bienvenue dans un lieu de partage !</h2>
-      </div>
-
-      <section class="main-section-qsnous">
-        <h3 class="main-section__title">Qui sommes-nous ?</h3>
-        <div class="main-section__container">
-          <div class="main-section__image">
-            <img src="assets/images/qsnous.webp" alt="La ferme des possibles" />
-          </div>
-          <article class="main-section__text">
-            <p>
-              La Ferme des Possibles, c’est avant tout un collectif de
-              passionnés et de rêveurs qui souhaitent bâtir un tiers-lieu vivant
-              et collaboratif, au cœur de notre territoire. Ce projet est porté
-              par une vision commune : créer un espace où chacun peut apprendre,
-              partager et transmettre ses savoir-faire dans une ambiance
-              conviviale et solidaire.
-            </p>
-            <p>
-              Ici, nous imaginons un lieu où les compétences et les passions se
-              croisent et se complètent : maraîchage, couture, cuisine,
-              bricolage, arts créatifs… Tout le monde a quelque chose à
-              apporter, et tout le monde peut en ressortir enrichi.
-            </p>
-            <p>
-              Notre objectif est de favoriser le lien social, l'entraide et
-              l’innovation locale. La Ferme des Possibles sera un espace où vous
-              pourrez participer à des ateliers, proposer des projets, ou
-              simplement profiter d’un moment d’échange autour d’un café.
-            </p>
-            <p>
-              Rejoignez-nous pour construire ensemble un lieu où les possibles
-              deviennent réalité. Parce qu’en mutualisant nos forces, nous
-              pouvons créer quelque chose de grand pour notre communauté !
-            </p>
-          </article>
+      <div class="container">
+        <div class="main-banner">
+          <h2 class="main-banner__title">
+            Bienvenue dans un lieu de partage !
+          </h2>
         </div>
-      </section>
 
-      <section class="main-section-projet">
-        <h3 class="main-section__title">Le projet</h3>
-        <div class="main-section__container">
-          <div class="main-section__image">
-            <img src="assets/images/projet.webp" alt="La ferme des possibles" />
+        <section class="main-section">
+          <h3 class="main-section__title">Qui sommes-nous ?</h3>
+          <div class="main-section__container">
+            <div class="main-section__image">
+              <img
+                src="assets/images/qsnous.webp"
+                alt="La ferme des possibles"
+              />
+            </div>
+            <div class="main-section__text">
+              <p>
+                La Ferme des Possibles, c’est avant tout un collectif de
+                passionnés et de rêveurs qui souhaitent bâtir un tiers-lieu
+                vivant et collaboratif, au cœur de notre territoire. Ce projet
+                est porté par une vision commune : créer un espace où chacun
+                peut apprendre, partager et transmettre ses savoir-faire dans
+                une ambiance conviviale et solidaire.
+              </p>
+              <p>
+                Ici, nous imaginons un lieu où les compétences et les passions
+                se croisent et se complètent : maraîchage, couture, cuisine,
+                bricolage, arts créatifs… Tout le monde a quelque chose à
+                apporter, et tout le monde peut en ressortir enrichi.
+              </p>
+              <p>
+                Notre objectif est de favoriser le lien social, l'entraide et
+                l’innovation locale. La Ferme des Possibles sera un espace où
+                vous pourrez participer à des ateliers, proposer des projets, ou
+                simplement profiter d’un moment d’échange autour d’un café.
+              </p>
+              <p>
+                Rejoignez-nous pour construire ensemble un lieu où les possibles
+                deviennent réalité. Parce qu’en mutualisant nos forces, nous
+                pouvons créer quelque chose de grand pour notre communauté !
+              </p>
+            </div>
           </div>
-          <article class="main-section__text">
-            <p>
-              La Ferme des Possibles, c’est un projet qui allie agriculture
-              biologique, circuit court et engagement collectif. Mais c’est
-              aussi un lieu de vie animé par un café associatif et un service de
-              restauration, où convivialité et saveurs locales se rencontrent.
-            </p>
-            <p>
-              Au cœur de ce projet, la transmission et le partage occupent une
-              place centrale. La ferme propose régulièrement des ateliers, des
-              stages et des événements, créant ainsi des opportunités pour
-              apprendre de nouvelles compétences, échanger des savoirs et
-              renforcer les liens entre les habitants du territoire.
-            </p>
-            <p>
-              Entre agriculture, cuisine et apprentissage, la Ferme des
-              Possibles se construit comme un véritable lieu de vie, porteur de
-              valeurs humaines et durables.
-            </p>
-          </article>
-        </div>
-      </section>
+        </section>
 
-      <section class="main-section-activites">
-        <h3 class="main-section__title">Nos activités</h3>
-        <div class="main-section__container">
-          <div class="main-section__image">
+        <section class="main-section">
+          <h3 class="main-section__title">Le projet</h3>
+          <div class="main-section__container">
+            <div class="main-section__image">
+              <img
+                src="assets/images/projet.webp"
+                alt="La ferme des possibles"
+              />
+            </div>
+            <div class="main-section__text">
+              <p>
+                La Ferme des Possibles, c’est un projet qui allie agriculture
+                biologique, circuit court et engagement collectif. Mais c’est
+                aussi un lieu de vie animé par un café associatif et un service
+                de restauration, où convivialité et saveurs locales se
+                rencontrent.
+              </p>
+              <p>
+                Au cœur de ce projet, la transmission et le partage occupent une
+                place centrale. La ferme propose régulièrement des ateliers, des
+                stages et des événements, créant ainsi des opportunités pour
+                apprendre de nouvelles compétences, échanger des savoirs et
+                renforcer les liens entre les habitants du territoire.
+              </p>
+              <p>
+                Entre agriculture, cuisine et apprentissage, la Ferme des
+                Possibles se construit comme un véritable lieu de vie, porteur
+                de valeurs humaines et durables.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-section">
+          <h3 class="main-section__title">Nos activités</h3>
+          <div class="main-section__container">
+            <div class="main-section__image">
+              <img
+                src="assets/images/activites.jpg"
+                alt="La ferme des possibles"
+              />
+            </div>
+            <div class="main-section__text">
+              <p>
+                À la Ferme des Possibles, nous proposons des activités variées
+                telles que des ateliers de couture, des initiations à la
+                permaculture et des cours de cuisine. Nous organisons également
+                des repas solidaires pour favoriser la convivialité et
+                l’entraide.
+              </p>
+              <p>
+                La ferme accueille des résidences d'artistes, offrant un espace
+                créatif pour des projets artistiques divers. Chaque activité
+                vise à encourager le partage, l'apprentissage et la découverte
+                dans une ambiance chaleureuse et solidaire.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-section-gallery">
+          <h3 class="main-section__title">Nos valeurs</h3>
+          <div class="main-section__image__gallery">
             <img
-              src="assets/images/activites.jpg"
+              class="gallery"
+              src="assets/images/valeur1.jpg"
+              alt="La ferme des possibles"
+            />
+            <img
+              class="gallery"
+              src="assets/images/valeur2.jpg"
+              alt="La ferme des possibles"
+            />
+            <img
+              class="gallery"
+              src="assets/images/valeur3.jpg"
+              alt="La ferme des possibles"
+            />
+            <img
+              class="gallery"
+              src="assets/images/valeur4.jpg"
+              alt="La ferme des possibles"
+            />
+            <img
+              class="gallery"
+              src="assets/images/valeur5.jpg"
+              alt="La ferme des possibles"
+            />
+            <img
+              class="gallery"
+              src="assets/images/valeur6.jpg"
               alt="La ferme des possibles"
             />
           </div>
-          <article class="main-section__text">
-            <p>
-              À la Ferme des Possibles, nous proposons des activités variées
-              telles que des ateliers de couture, des initiations à la
-              permaculture et des cours de cuisine. Nous organisons également
-              des repas solidaires pour favoriser la convivialité et l’entraide.
-            </p>
-            <p>
-              La ferme accueille des résidences d'artistes, offrant un espace
-              créatif pour des projets artistiques divers. Chaque activité vise
-              à encourager le partage, l'apprentissage et la découverte dans une
-              ambiance chaleureuse et solidaire.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="main-section-gallery">
-        <h3 class="main-section__title">Nos valeurs</h3>
-        <div class="main-section__image__gallery">
-          <img
-            class="gallery"
-            src="assets/images/valeur1.jpg"
-            alt="La ferme des possibles"
-          />
-          <img
-            class="gallery"
-            src="assets/images/valeur2.jpg"
-            alt="La ferme des possibles"
-          />
-          <img
-            class="gallery"
-            src="assets/images/valeur3.jpg"
-            alt="La ferme des possibles"
-          />
-          <img
-            class="gallery"
-            src="assets/images/valeur4.jpg"
-            alt="La ferme des possibles"
-          />
-          <img
-            class="gallery"
-            src="assets/images/valeur5.jpg"
-            alt="La ferme des possibles"
-          />
-          <img
-            class="gallery"
-            src="assets/images/valeur6.jpg"
-            alt="La ferme des possibles"
-          />
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-content__opening-hours">
-          <h4>Horaires d'ouverture</h4>
-          <ul>
-            <li>Lundi: 10h - 18h</li>
-            <li>Mardi: 10h - 18h</li>
-            <li>Mercredi: 10h - 18h</li>
-            <li>Jeudi: 10h - 18h</li>
-            <li>Vendredi: 10h - 18h</li>
-            <li>Samedi: 10h - 18h</li>
-            <li>Dimanche: 10h - 18h</li>
-          </ul>
-        </div>
-        <div class="footer-content__adress">
-          <h4>Adresse</h4>
-          <p>Gaec Cottin</p>
-          <p>22 La Bouderie, 35440 Dingé</p>
-        </div>
-        <div class="footer-content__social">
-          <h4>Réseaux sociaux</h4>
-          <ul>
-            <li>
-              <i class="fa-brands fa-square-facebook fa-xl"></i
-              ><a href="https://www.facebook.com/"></a>
-            </li>
-            <li>
-              <i class="fa-brands fa-square-twitter fa-xl"></i
-              ><a href="https://x.com/?lang=en"></a>
-            </li>
-            <li>
-              <i class="fa-brands fa-square-instagram fa-xl"></i
-              ><a href="https://www.instagram.com/"></a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-content__opening-hours">
+            <h4 class="footer-content__title">Horaires d'ouverture</h4>
+            <ul>
+              <li>Lundi: 10h - 18h</li>
+              <li>Mardi: 10h - 18h</li>
+              <li>Mercredi: 10h - 18h</li>
+              <li>Jeudi: 10h - 18h</li>
+              <li>Vendredi: 10h - 18h</li>
+              <li>Samedi: 10h - 18h</li>
+              <li>Dimanche: 10h - 18h</li>
+            </ul>
+          </div>
+          <div class="footer-content__adress">
+            <h4 class="footer-content__title">Adresse</h4>
+            <p>Gaec Cottin</p>
+            <p>22 La Bouderie, 35440 Dingé</p>
+          </div>
+          <div class="footer-content__social">
+            <h4 class="footer-content__title">Réseaux sociaux</h4>
+            <ul>
+              <li>
+                <i class="fa-brands fa-square-facebook fa-xl"></i
+                ><a href="https://www.facebook.com/"></a>
+              </li>
+              <li>
+                <i class="fa-brands fa-square-twitter fa-xl"></i
+                ><a href="https://x.com/?lang=en"></a>
+              </li>
+              <li>
+                <i class="fa-brands fa-square-instagram fa-xl"></i
+                ><a href="https://www.instagram.com/"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
