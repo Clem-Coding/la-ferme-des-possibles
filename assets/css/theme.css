@@ -68,6 +68,8 @@ h4 {
 h2 {
   font-family: Playfair Display, serif;
   font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 h3 {
@@ -75,14 +77,16 @@ h3 {
 }
 
 button {
+  background-color: #4bad94;
+  color: #f2efe3;
+  font-weight: bold;
+  margin: auto;
   padding: 0.5em 1em;
   border-radius: 0.3em;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
-
 button:hover {
-  opacity: 80%;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #3c8976;
 }
 
 /* *****************************************************************
@@ -93,7 +97,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
 }
 
 .header__menu-burger {
@@ -176,8 +179,8 @@ button:hover {
 }
 
 .main-banner__title {
-  text-align: center;
   font-size: 3rem;
+  margin-bottom: 0;
 }
 .main-section {
   display: flex;
@@ -186,7 +189,6 @@ button:hover {
 }
 .main-section__title {
   text-align: center;
-  margin-bottom: 1em;
 }
 .main-section-gallery {
   display: flex;
@@ -304,7 +306,6 @@ h4 {
 }
 */
 .activities-section__image {
-  margin: 0 10em;
   margin-top: 1em;
   transition: 0.3s ease-in-out;
   display: block;
@@ -357,6 +358,7 @@ h4 {
 .event-card__title {
   font-family: inherit;
   font-weight: bold;
+  margin-bottom: 0;
 }
 .event-card__image {
   -o-object-fit: cover;
@@ -391,10 +393,6 @@ h4 {
 /* *****************************************************************
 8. 'LE MUR' PAGE
 ***************************************************************** */
-.main-banner__text {
-  text-align: center;
-}
-
 .announcement-form {
   display: flex;
   flex-direction: column;
@@ -407,11 +405,17 @@ h4 {
   border: 1px solid #251e27;
 }
 
+.announcement-form label {
+  font-weight: bold;
+}
+
 .annoucement-form__textaera {
   height: 10em;
   padding: 0.75rem;
   border-radius: 5px;
   border: 1px solid #251e27;
+  font-family: inherit;
+  font-size: 1.5rem;
 }
 
 .annoucement-form__button {
@@ -468,9 +472,8 @@ h5 {
 /* *****************************************************************
 9. CONTACT PAGE
 ***************************************************************** */
-h2 {
-  text-align: center;
-  margin-bottom: 1em;
+.contact-title {
+  font-size: 3rem;
 }
 
 .form-section,
@@ -516,21 +519,6 @@ form {
   color: rgba(37, 30, 39, 0.6);
 }
 
-button {
-  background-color: #4bad94;
-  color: #f2efe3;
-  border: none;
-  text-align: center;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
-  align-self: flex-start; /* Pour aligner le bouton à gauche */
-  margin: auto;
-}
-button:hover {
-  background-color: #3c8976;
-}
-
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -552,6 +540,7 @@ button:hover {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__wrapper {
     flex-direction: row;
+    gap: 2em;
   }
   .events-container {
     flex-direction: row;
@@ -580,6 +569,15 @@ button:hover {
   form {
     width: 60%;
   }
+  .main-banner__text {
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-title {
+    font-size: 4rem;
+  }
 }
 /*____________________Version Desktop___________________________ */
 @media screen and (min-width: 1025px) {
@@ -592,6 +590,7 @@ button:hover {
   }
   .header__wrapper {
     flex-direction: row;
+    gap: 2em;
   }
   /*Page café */
   .main-section__images-container {
@@ -610,9 +609,16 @@ button:hover {
   .event-card__infos h3 {
     font-size: 1.6rem !important;
   }
+  /*Page Le mur */
   .announcements-wall {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .main-banner__text {
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header__title {
     font-size: 5rem;
@@ -622,6 +628,9 @@ button:hover {
   }
   .main h3 {
     font-size: 3rem;
+  }
+  .contact-title {
+    font-size: 4rem;
   }
   .main-section__container {
     display: flex;
@@ -645,6 +654,9 @@ button:hover {
   }
   section:nth-of-type(even) .main-section__container {
     flex-direction: row-reverse;
+  }
+  .activities-section__image {
+    margin: 0 10em;
   }
   form {
     width: 50%;

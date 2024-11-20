@@ -36,6 +36,7 @@ img {
 
 a {
   text-decoration: none;
+  // color: inherit;
 }
 button {
   all: unset;
@@ -90,21 +91,26 @@ h4 {
 h2 {
   font-family: Playfair Display, serif;
   font-size: $font-size-h2-desktop;
+  text-align: center;
+  margin-bottom: 1em;
 }
 h3 {
   font-size: $font-size-h3-mobile;
 }
+
 button {
+  background-color: $turquoise;
+  color: $beige;
+  font-weight: bold;
+  margin: auto;
   padding: 0.5em 1em;
   border-radius: 0.3em;
-  transition: all 0.3s ease;
-  // width: auto;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darken($turquoise, 10%);
+  }
 }
 
-button:hover {
-  opacity: 80%;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
 /* *****************************************************************
 4. MAIN LAYOUT ( pour le commun à toutes les pages?)
 ***************************************************************** */
@@ -114,7 +120,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
 }
 
 .header__menu-burger {
@@ -206,8 +211,9 @@ button:hover {
   // margin: auto;
 
   &-banner__title {
-    text-align: center;
+    // text-align: center;
     font-size: $font-size-h2-mobile;
+    margin-bottom: 0;
   }
   &-section {
     display: flex;
@@ -217,7 +223,7 @@ button:hover {
     &__title {
       text-align: center;
       // font-size: $font-size-h3-mobile;
-      margin-bottom: 1em;
+      // margin-bottom: 1em;
     }
     // &__text {
     //   text-align: left;
@@ -339,7 +345,6 @@ h4 {
 */
 
 .activities-section__image {
-  margin: 0 10em;
   margin-top: 1em;
   transition: 0.3s ease-in-out;
   display: block;
@@ -393,6 +398,7 @@ h4 {
   &__title {
     font-family: inherit;
     font-weight: bold;
+    margin-bottom: 0;
   }
 
   &__image {
@@ -426,9 +432,7 @@ h4 {
 /* *****************************************************************
 8. 'LE MUR' PAGE
 ***************************************************************** */
-.main-banner__text {
-  text-align: center;
-}
+
 .announcement-form {
   display: flex;
   flex-direction: column;
@@ -441,11 +445,17 @@ h4 {
   border: 1px solid $gris-noir;
 }
 
+.announcement-form label {
+  font-weight: bold;
+}
+
 .annoucement-form__textaera {
   height: 10em;
   padding: 0.75rem;
   border-radius: 5px;
   border: 1px solid $gris-noir;
+  font-family: inherit;
+  font-size: 1.5rem;
 }
 
 .annoucement-form__button {
@@ -501,13 +511,9 @@ h5 {
 /* *****************************************************************
 9. CONTACT PAGE
 ***************************************************************** */
-// Style du conteneur général
-// .container {
-//   gap: 2rem;
-// }
-h2 {
-  text-align: center;
-  margin-bottom: 1em;
+
+.contact-title {
+  font-size: $font-size-h2-mobile;
 }
 
 // Sections de formulaire et de contact
@@ -551,22 +557,6 @@ form {
   }
 }
 
-button {
-  background-color: $turquoise;
-  color: $beige;
-
-  border: none;
-  text-align: center;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
-  align-self: flex-start; /* Pour aligner le bouton à gauche */
-  margin: auto;
-  &:hover {
-    background-color: darken($turquoise, 10%);
-  }
-}
-
 // Style pour la section contact
 .contact-section {
   display: flex;
@@ -590,6 +580,7 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__wrapper {
     flex-direction: row;
+    gap: 2em;
   }
 
   .events-container {
@@ -620,6 +611,17 @@ button {
   form {
     width: 60%;
   }
+
+  .main-banner__text {
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-title {
+    font-size: $font-size-h2-desktop;
+  }
 }
 
 /*____________________Version Desktop___________________________ */
@@ -636,6 +638,7 @@ button {
 
   .header__wrapper {
     flex-direction: row;
+    gap: 2em;
   }
 
   /*Page café */
@@ -660,10 +663,20 @@ button {
     font-size: 1.6rem !important;
   }
 
+  /*Page Le mur */
+
   .announcements-wall {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .main-banner__text {
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .header__title {
     font-size: $font-size-h1-desktop;
   }
@@ -672,6 +685,10 @@ button {
   }
   .main h3 {
     font-size: $font-size-h3-desktop;
+  }
+
+  .contact-title {
+    font-size: $font-size-h2-desktop;
   }
 
   .main-section__container {
@@ -700,6 +717,10 @@ button {
 
   section:nth-of-type(even) .main-section__container {
     flex-direction: row-reverse;
+  }
+
+  .activities-section__image {
+    margin: 0 10em;
   }
 
   form {

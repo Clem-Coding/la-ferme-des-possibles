@@ -25,11 +25,13 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <img
-          class="header__logo"
-          src="assets/images/logo-ferme.png"
-          alt="logo"
-        />
+        <a href="index.html">
+          <img
+            class="header__logo"
+            src="assets/images/logo-ferme.png"
+            alt="logo"
+          />
+        </a>
 
         <h1 class="header__title">La ferme des possibles</h1>
       </div>
@@ -68,7 +70,7 @@
     <div class="container">
       <!-- Partie Formulaire -->
       <div class="form-section">
-        <h2 class="contact-h2">Inscription aux ateliers</h2>
+        <h2 class="contact-title">Inscription aux ateliers</h2>
         <form>
           <div class="form-group">
             <label for="nom">Nom :</label>
@@ -128,13 +130,21 @@
 
       <!-- Partie Contact -->
       <section class="contact-section">
-        <h2 class="contact-h2">Nous Contacter</h2>
-        <div class="contact-item"><span>Email :</span> contact@example.com</div>
+        <h2 class="contact-title">Nous Contacter</h2>
         <div class="contact-item">
-          <span>Téléphone :</span> +33 6 00 00 00 00
+          Mail :
+          <a href="mailto:contact@example.com" class="contact-link"
+            >contact@example.com</a
+          >
         </div>
         <div class="contact-item">
-          <span>Adresse :</span> 123 Rue de la République, 75000 Paris, France
+          Téléphone :
+          <a href="tel:+33600000000" class="contact-link">
+            +33 6 00 00 00 00
+          </a>
+        </div>
+        <div class="contact-item">
+          <span>Adresse :</span> 22 La Bouderie, 35440 Dingé
         </div>
       </section>
     </div>
